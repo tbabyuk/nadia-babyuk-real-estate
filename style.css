@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-image: url('./img/toronto_waterfront.png');
+  background-size: cover;
+}
+
+.header-logo {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.header-logo img {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-text {
+  display: grid;
+  place-items: center;
+}
+
+.text-box {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: white;
+  text-align: center;
+}
+
+.text-box a {
+  color: white;
+}
+
+.header-text h3 {
+  margin: 15px 0;
+}
+
+.header-photo {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.header-photo img {
+  position: absolute;
+  height: 90%;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Navigation */
+
+.nav {
+  background-color: rgba(224, 51, 70, 0.8);
+}
+
+/* BODY Styling */
+
+.section {
+    margin: 100px 0;
+}
+
+
+.nav a {
+    color: white;
+}
+
+.nav a:hover {
+    color: rgb(250,220,191);
+}
+
+.main {
+    height: 300px;
+}
+
+
+
+
+/* Listings Section */
+
+#listings {
+  background-color: rgba(2,2,2,0.3);
+  padding: 50px;
+  color: white;
+}
+
+.listings {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#listings h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.listing {
+  display: grid;
+  place-items: center;
+}
+
+
+
+
+/* Reviews Section */
+
+#reviews {
+  padding: 50px;
+}
+
+.reviews {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+#reviews h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.review {
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.3);
+}
+
+
+/* Contact Section */
+
+#contact {
+  background-color: rgba(2,2,2,0.3);
+  padding: 50px;
+}
+
+.contact {
+    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.contact-form-container {
+    display: grid;
+    place-items: center;
+}
+
+.contact-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+}
+
+.contact-address a {
+    color: black;
+}
+
+.contact-photo-container {
+    display: grid;
+    place-items: center;
+}
+
+.contact-photo-container img {
+    height: 90%;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px 5px rgba(0, 0, 0, 0.3);  
+}
+
+
+/* Contact Form */
+
+form {
+    width: 55%;
+}
+
+form input {
+    border: 2px solid gray;
+    padding-left: 5px;
+    height: 38px;
+}
+
+form textarea {
+    border: 2px solid gray;
+    padding-left: 5px;
+}
+
+form button {
+    padding: 5px 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Footer */
+
+footer {
+    margin-top: 20px;
+    background-color: #444;
+    color: white;
+    padding: 10px 0px;
+    text-align: center;
+}
