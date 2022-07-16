@@ -5,10 +5,8 @@
 }
 
 /* Header */
-.header {
+.header-row {
   height: 300px;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
   background-image: url('./img/toronto_waterfront.png');
   background-size: cover;
 }
@@ -23,14 +21,18 @@
   position: absolute;
   top: 25px;
   left: 25px;
-  width: 80%;
+  width: 65%;
   border-radius: 8px;
   box-shadow: 3px 3px 8px 5px rgba(0, 0, 0, 0.3);
 }
 
 .header-text {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .text-box {
@@ -75,10 +77,6 @@
 
 /* BODY Styling */
 
-.section {
-    margin: 100px 0;
-}
-
 
 .nav a {
     color: white;
@@ -88,8 +86,12 @@
     color: rgb(250,220,191);
 }
 
+
+/* Main Section */
+
 .main {
-    height: 300px;
+    height: auto;
+    margin: 100px 0;
 }
 
 
@@ -98,7 +100,7 @@
 /* Listings Section */
 
 #listings {
-  background-color: rgba(2,2,2,0.3);
+  background-color: rgba(2,2,2,0.1);
   padding: 50px;
   color: white;
 }
@@ -106,7 +108,7 @@
 .listings {
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 #listings h2 {
@@ -119,7 +121,17 @@
   place-items: center;
 }
 
+.sold {
+  position: relative;
+}
 
+.img-sold img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
 
 
 /* Reviews Section */
@@ -140,18 +152,31 @@
   margin-bottom: 80px;
 }
 
-.review {
-    padding: 40px 50px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.3);
+.review-author {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.review-author img {
+  width: 45px;
+  border-radius: 50%;
+  border: 2px solid rgba(2,2,2,0.1);
 }
 
 
 /* Contact Section */
 
-#contact {
-  background-color: rgba(2,2,2,0.3);
+#footer {
+  background-color: rgba(2,2,2,0.1);
   padding: 50px;
+}
+
+#footer h2 {
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 .contact {
@@ -160,34 +185,31 @@
     grid-template-columns: 2fr 1fr 1fr;
 }
 
-#contact h2 {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.contact-form-container {
+.footer-form {
     display: grid;
     place-items: center;
 }
 
-.contact-address {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.footer-address {
     line-height: 2rem;
 }
 
-.contact-address a {
+.footer-address a {
     color: black;
 }
 
-.contact-photo-container {
-    display: grid;
-    place-items: center;
+.footer-address h3 {
+  margin-bottom: 20px;
 }
 
-.contact-photo-container img {
+.footer-photo {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.footer-photo img {
+    position: absolute;
     height: 90%;
     border-radius: 8px;
     box-shadow: 3px 3px 8px 5px rgba(0, 0, 0, 0.3);  
@@ -197,7 +219,7 @@
 /* Contact Form */
 
 form {
-    width: 55%;
+    width: 60%;
 }
 
 form input {
@@ -227,10 +249,23 @@ form button {
 
 /* Footer */
 
-footer {
-    margin-top: 20px;
+.bottom-footer {
     background-color: #444;
     color: white;
     padding: 10px 0px;
     text-align: center;
 }
+
+
+
+/* GLOBAL */
+
+.link {
+  color: rgb(33,37,41);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
