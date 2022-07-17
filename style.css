@@ -35,7 +35,7 @@
 /* Navigation */
 
 .nav {
-  background-color: rgba(224, 51, 70, 0.8);
+  background-color: #e03346cc;
 }
 
 /* BODY Styling */
@@ -61,7 +61,8 @@
 /* Listings Section */
 
 #listings {
-  background-color: rgba(2,2,2,0.1);
+  /* background-color: rgba(2,2,2,0.1); */
+  background-color: rgba(108,117,125,0.1);
   padding: 50px;
   color: white;
 }
@@ -131,7 +132,7 @@
 /* Contact Section */
 
 #footer {
-  background-color: rgba(2,2,2,0.1);
+  background-color: rgba(108,117,125,0.1);
   padding: 50px;
 }
 
@@ -214,5 +215,22 @@ form button {
 h2 {
   text-align: center;
   margin-bottom: 80px;
+}
+
+.contact-link {
+  cursor: pointer;
+}
+
+#buttons {
+  width: fit-content;
+  display: flex;
+  justify-content: space-around;
+}
+#btn-call, #btn-message {
+  width: fit-content;
+}
+
+#btn-message {
+  margin-left: 20px;
 }
 
