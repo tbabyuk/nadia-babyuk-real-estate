@@ -221,11 +221,6 @@ h2 {
   cursor: pointer;
 }
 
-#buttons {
-  width: fit-content;
-  display: flex;
-  justify-content: space-around;
-}
 #btn-call, #btn-message {
   width: fit-content;
 }
