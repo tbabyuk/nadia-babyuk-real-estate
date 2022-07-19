@@ -3,6 +3,7 @@ const contactLinks = document.querySelectorAll(".contact-link");
 const footer = document.getElementById("footer");
 const formInput = document.getElementById("name");
 const currentYear = document.getElementById("current-year");
+const nav = document.querySelector("nav");
 
 
 
