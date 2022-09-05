@@ -76,7 +76,7 @@
                 </div>
             
                 <div class="col-12 col-md-6 col-lg-8 px-5">
-                    <h3 class="fst-italic fw-lighter">Service in English, Ukrainian, Russian and Polish languages</h3>
+                    <h3 class="fst-italic fw-lighter">Service in English, Ukrainian and Polish languages</h3>
                 </div>
             </div>
 
@@ -165,7 +165,10 @@
                             <li class="list-group-item">Sqft: <strong>500-599</strong></li>
                           </ul>
                           <div class="card-body text-center">
-                            <a href="http://v3.torontomls.net/Live/Pages/Public/Link.aspx?Key=e22430b876c143caa05b5d83d6299d95&App=TREB" target="_blank" class="card-link">View on MLS</a>
+                            <a href="http://v3.torontomls.net/Live/Pages/Public/Link.aspx?Key=e22430b876c143caa05b5d83d6299d95&App=TREB" target="_blank" class="card-link text-secondary" style="pointer-events: none">View on MLS</a>
+                          </div>
+                          <div class="img-sold">
+                            <img src="./img/leased.png" alt="sold">
                           </div>
                     </div> <!--/card-->
                 </div> <!--/col--> 
@@ -191,14 +194,18 @@
                           </div> <!--/carousel-->
                           <div class="card-body text-center">
                             <h5 class="card-title text-dark">House for Sale</h5>
+                            <h5 class="text-danger">*EXCLUSIVE LISTING*</h5>
                             <p class="card-text text-dark">41 Thompson Ave, Toronto</p>
                           </div>
                           <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Price: <strong>$2,300.00</strong></li>
-                            <li class="list-group-item">Sqft: <strong>600-699</strong></li>
+                            <li class="list-group-item">Price: <strong>$3,498,000.00</strong></li>
+                            <li class="list-group-item">Sqft: <strong>2,800 + basement</strong></li>
                           </ul>
                           <div class="card-body text-center">
-                            <a href="http://v3.torontomls.net/Live/Pages/Public/Link.aspx?Key=945ec6c0a9364c22ae7f8b5a852c3779&App=TREB" target="_blank" class="card-link">View on MLS</a>
+                            <a href="http://v3.torontomls.net/Live/Pages/Public/Link.aspx?Key=945ec6c0a9364c22ae7f8b5a852c3779&App=TREB" target="_blank" class="card-link text-secondary" style="pointer-events: none">View on MLS</a>
+                            <a href="" type="button" class="card-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              Read Description
+                            </a>
                           </div>
                     </div> <!--/card-->
                 </div> <!--/col-->
@@ -292,7 +299,7 @@
                           <li class="list-group-item">Sqft: <strong>600-699</strong></li>
                         </ul>
                         <div class="card-body text-center">
-                          <a href="http://v3.torontomls.net/Live/Pages/Public/Link.aspx?Key=945ec6c0a9364c22ae7f8b5a852c3779&App=TREB" target="_blank" class="card-link">View on MLS</a>
+                          <a href="http://v3.torontomls.net/Live/Pages/Public/Link.aspx?Key=945ec6c0a9364c22ae7f8b5a852c3779&App=TREB" target="_blank" class="card-link text-secondary" style="pointer-events: none">View on MLS</a>
                         </div>
                         <div class="img-sold">
                             <img src="./img/leased.png" alt="sold">
@@ -303,6 +310,34 @@
               </div>
 
             </div>
+
+
+        
+          <!-- MODAL -->
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">41 Thompson Ave, Toronto</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                  <div class="card" style="width: 80rem;">
+                    <img src="./img/listings/thompson_ave/thompson_ave_1_444_250.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Fully renovated home, with approximately 2800 sq. ft. of living space plus basement in a custom-built home in the prestigious Kingsway area. The house is conveniently located on the south side of Bloor Street West, steps from TTC, subway, boutiques and restaurants. It contains 4+1 bedrooms, 3 fireplaces, 5 washrooms and a powder room. The first floor offers an oversized living and dining area with a two-sided fireplace, modern custom-built kitchen and 9 foot ceilings. The finished basement has heated floors, lots of storage space, along with a built-in entertainment system and a beverage station. In addition to spacious bedrooms, the upper floor has a large laundry room, multiple walk-in closets and exquisite washrooms. A rear deck with a large backyard provides a lot of space for outdoor enjoyment and entertaining. Just come and see for yourself!</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
 
 
         <!-- REVIEWS SECTION ||-->
@@ -318,7 +353,7 @@
                         </em></q>
                     </div>
                     <div class="review-author">
-                        <img src="img/reviews/yuri_gabris.gif">
+                        <img src="img/reviews/yuri_gabris.jpg">
                         <span>
                             <b>- Yuri Gabris,</b>
                             <br>former client
@@ -344,15 +379,12 @@
                 <!-- review #2 -->
                 <div class="col-12 py-4 px-md-4 col-md-6 col-lg-3 review">
                     <div>
-                        <q><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam enim dignissimos repellat magni
-                        natus magnam, facere assumenda deserunt sapiente animi perspiciatis doloribus in odio quae. Debitis
-                        temporibus enim molestias? Laboriosam saepe delectus totam reiciendis officiis nulla fugiat hic ex
-                        ullam.</em></q>
+                        <q><em>I was a repeating client for Nadia Babyuk. Her patience, tolerance, persistence and professionalism made the whole process of buying and selling a lot easier than anticipated. Thank you for the good work!</em></q>
                     </div>
                     <div class="review-author">
-                        <img src="img/reviews/yuri_gabris.gif">
+                        <img src="img/reviews/krystyna_caldarola.jpg">
                         <span>
-                            <b>- Author Name,</b>
+                            <b>- Krystyna Caldarola,</b>
                             <br>former client
                         </span>                    </div>      
                 </div>
